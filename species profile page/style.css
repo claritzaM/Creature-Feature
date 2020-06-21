@@ -29,6 +29,21 @@
 .main {
   margin-left: 160px; /* Same as the width of the sidebar */
   padding: 0px 10px;
+  position: absolute;
+  width: 1288px;
+  height: 1023px;
+
+  background: radial-gradient(
+      38.89% 38.89% at 60.82% 61.11%,
+      #427976 0.82%,
+      rgba(35, 55, 73, 0) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(15, 29, 41, 0.5) 40.1%,
+      rgba(69, 164, 177, 0) 100%
+    ),
+    #101628;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
