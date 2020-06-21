@@ -3,18 +3,17 @@
   height: 100%; /* Full-height: remove this if you want "auto" height */
   width: 160px; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: -1; /* Stay on top */
+  z-index: -1;
   top: 0; /* Stay at the top */
   left: 0;
   background-color: #111; /* Black */
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 20px;
-  padding-bottom: 30px;
+  padding-top: 6%;
 }
 
 /* The navigation menu links */
 .sidenav a {
-  padding: 6px 8px 6px 16px;
+  padding: 40% 8%;
   text-decoration: none;
   font-size: 25px;
   color: #818181;
