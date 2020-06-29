@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="../asset folder/style.css"/>
     <title>Submit</title>
   </head>
-  <body>
+  <body class="SubmitBod">
     <!-- Nav bar -->
 
     <nav index=navbar class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -37,7 +37,28 @@
             <a class="text-light nav-link" href="../sign up page/index.html">Register</a>
           </li>
         </nav>
-    </div>
-
+          <div class="container">
+              <p>
+                <form action="/action_page.php">
+                  <input type="file" id="myFile" name="filename" />
+                </form>
+              </p> 
+            </div>
+             <hr>
+              <div class="Title">
+            <label for="Desciption">Title</label>
+            <br>
+            <input type="text" class="Round">
+              </div>
+            <hr>
+              <div class="Title">
+            <label for="Category">Category</label>
+            <input type="text" class="Round">
+            <br>
+            <label for="World">World</label>
+            <input type="text" class="Round">
+              </div>
+              <br>
+              <button type="submit" class="Submit">Submit</button>
   </body>
 </html>
