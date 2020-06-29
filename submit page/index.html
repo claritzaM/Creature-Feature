@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
     rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-  />
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css">
     <title>Submit</title>
   </head>
   <body>
@@ -40,9 +40,24 @@
               <p>
                 <form action="/action_page.php">
                   <input type="file" id="myFile" name="filename" />
-                  <input type="submit" />
                 </form>
-              </p>
+              </p> 
             </div>
+             <hr>
+              <div class="Title">
+            <label for="Desciption">Title</label>
+            <br>
+            <input type="text" class="Round">
+              </div>
+            <hr>
+              <div class="Title">
+            <label for="Category">Category</label>
+            <input type="text" class="Round">
+            <br>
+            <label for="World">World</label>
+            <input type="text" class="Round">
+              </div>
+              <br>
+              <button type="submit" class="Submit">Submit</button>
   </body>
 </html>

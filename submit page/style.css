@@ -5,51 +5,34 @@ body {
   font-size: 18px;
   line-height: 150%;
   color: #333;
-  background: #efeee7;
-}
-
-header {
-  background: #333;
-}
-
-h1 {
-  padding: 20px 0;
-  margin: 0;
-  margin-bottom: 20px;
-  font-size: 28px;
-  color: #eee;
+  background: #000000;
   text-align: center;
 }
 
-h2 {
-  font-size: 24px;
-}
-
-a {
-  color: #d21034;
-}
-
 .container {
-  width: 1024px;
+  width: 600px;
   margin: 0 auto;
+  text-align: center;
+  background: white;
+  border-radius: 25px;
+  padding: 20px;
 }
-
-#main-bio,
-#contact-info,
-#bio-image {
-  float: left;
+.Title {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  background: white;
+  border-radius: 25px;
+  padding: 20px;
 }
-
-#main-bio {
-  width: 70%;
+.Submit {
+  width: 525px;
+  margin: 0 auto;
+  text-align: center;
+  background: white;
+  border-radius: 25px;
+  padding: 10px;
 }
-
-#contact-info {
-  width: 30%;
-}
-
-#bio-image {
-  width: 200px;
-  height: 200px;
-  margin-right: 20px;
+.Round {
+  border-radius: 25px;
 }
