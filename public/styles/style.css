@@ -82,3 +82,21 @@
 .Round {
   border-radius: 25px;
 }
+.main-Side {
+  /* Same as the width of the sidebar */
+  padding: 10px 10px;
+  background: radial-gradient(
+      38.89% 38.89% at 60.82% 61.11%,
+      #427976 0.82%,
+      rgba(35, 55, 73, 0) 100%
+    ),
+    #101628;
+}
+.Back {
+  background: radial-gradient(
+      38.89% 38.89% at 60.82% 61.11%,
+      #427976 0.82%,
+      rgba(35, 55, 73, 0) 100%
+    ),
+    #101628;
+}
