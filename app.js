@@ -7,9 +7,16 @@ var app = express();
 // set view engine
 app.set("view engine", "ejs");
 
+// middleware
+app.use(express.static('public'));
+
 var PORT = process.env.PORT || 3000;
 
 app.get("/", function (req, res) {
+  res.render("explore.ejs", {});
+});
+
+app.get("/profile", function (req, res) {
   res.render("profile.ejs", {});
 });
 
@@ -18,7 +25,7 @@ app.get("/gallery", function (req, res) {
 });
 
 app.get("/login", function (req, res) {
-  res.render("profile.ejs", {});
+  res.render("login.ejs", {});
 });
 
 app.get("/signup", function (req, res) {
