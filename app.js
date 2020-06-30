@@ -1,8 +1,25 @@
 // Dependencies
 var express = require("express");
+var mysql = require("mysql");
 
 // app initialization
 var app = express();
+// mysql connection
+
+var connection = mysql.createConnection({
+  host: "localhost",
+
+  port: 3306,
+
+  user: "root",
+
+  password: "",
+  database: "creatureFeature",
+});
+
+connection.connect(function (err) {
+  if (err) throw err;
+});
 
 // set view engine
 app.set("view engine", "ejs");
