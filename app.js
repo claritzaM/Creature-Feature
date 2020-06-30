@@ -16,7 +16,7 @@ var db = mysql.createConnection({
 
 db.connect(function (err) {
   if (err) throw err;
-  console.log("connected as id " + db.threadId);
+  console.log("connected as id ");
 });
 
 // set view engine
