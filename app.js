@@ -16,7 +16,7 @@ var db = mysql.createConnection({
 
 db.connect(function (err) {
   if (err) throw err;
-  console.log("connected as id " + connection.threadId);
+  console.log("connected as id " + db.threadId);
 });
 
 // set view engine
@@ -65,6 +65,19 @@ app.get("/submit-creature", function (req, res) {
 });
 
 // create a post route for handling submit creature form
+app.post("/submit-creature", function (req, res) {
+  var creature = req.body;
+  var id = parseInt(req.params.id);
+  todo.id = id;
+  console.log(creature);
+
+  for (let i = 0; i < creature.length; i++) {
+    if (id === todosItems[i].id) {
+      creature[i] = todo;
+      res.redirect("/");
+    }
+  }
+});
 
 app.get("/submit-world", function (req, res) {
   // query all worlds
