@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="/styles/worldstyle.css"/>
+    <link rel="stylesheet" href="/styles/worldstyle.css" />
     <title>World</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Nav bar -->
 
-    <nav index=navbar class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav index="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand font-weight-bold" href="#">
-        <img src="/images/logo.png" width="30" height="30" alt="Logo" loading="lazy"> Creature Feature
-       </a>
-      </button>
+        <img
+          src="/images/logo.png"
+          width="30"
+          height="30"
+          alt="Logo"
+          loading="lazy"
+        />
+        Creature Feature
+      </a>
 
       <div class="navbar-nav" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
@@ -39,36 +45,32 @@
           <li class="nav-item">
             <a class="text-light nav-link" href="/speciesProfile">Species</a>
           </li>
-        </nav>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="col-md-12">
+      <div><img id="image" src="/images/forest.jpg" alt="" /></div>
+      <div><img id="profilepic" src="/images/logo.png" alt="" /></div>
+      <div id="gallerytext">Gallery</div>
     </div>
 
-    <div class="worldcontainer">
-        <div class="col md-12">
-          <div><img id="image" src="/images/forest.jpg" alt=""></div>
-        </div>
+    <div class="container">
+      <div class="col-md-2">Pandora</div>
 
-        <div class="col md-4">
-          <div><img id="profilepic" src="/images/logo.png" alt=""></div>
+      <div class="col-md-10 text-center">
+        <div id="rightpanel2">All | Jungle | Grasslands</div>
+        <div><img src="/images/placeholder.webp" alt="" /></div>
+        <div><img src="/images/placeholder.webp" alt="" /></div>
+        <div><img src="/images/placeholder.webp" alt="" /></div>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem
+            ipsum dolor sit amet, consectetur adipisicing elit. Consectetur
+            adipisicing elit.
+          </p>
         </div>
-        <div class="col md-8">
-          <div id="gallerytext">Gallery</div>
-        </div>
-        <div class="col md-4">
-          <div id="leftpanel1">Sample text</div>
-        </div>
-        <div class="col md-4">
-          <div id="leftpanel2">Sample text</div>
-        </div>
-        <div class="col md-4">
-          <div id="leftpanel3">Pandora</div>
-        </div>
-        <div class="col md-4">
-          <div id="leftpanel4">Sample text</div>
-        </div>
-        <div class="col md-8">
-          <div id="leftpanel1">Sample text</div>
-        </div>
-
-  </div>
-</body>
+      </div>
+    </div>
+  </body>
 </html>
