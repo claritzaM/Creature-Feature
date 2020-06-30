@@ -8,12 +8,16 @@ var app = express();
 app.set("view engine", "ejs");
 
 // middleware
-app.use(express.static('public'));
+app.use(express.static("public"));
 
 var PORT = process.env.PORT || 3000;
 
 app.get("/", function (req, res) {
   res.render("explore.ejs", {});
+});
+
+app.get("/welcome", function (req, res) {
+  res.render("welcome.ejs", {});
 });
 
 app.get("/profile", function (req, res) {
