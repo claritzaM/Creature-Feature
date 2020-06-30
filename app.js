@@ -6,18 +6,15 @@ var mysql = require("mysql");
 var app = express();
 // mysql connection
 
-var connection = mysql.createConnection({
+var db = mysql.createConnection({
   host: "localhost",
-
   port: 3306,
-
   user: "root",
-
   password: "password",
   database: "creatureFeature",
 });
 
-connection.connect(function (err) {
+db.connect(function (err) {
   if (err) throw err;
   console.log("connected as id " + connection.threadId);
 });
@@ -31,6 +28,7 @@ app.use(express.static("public"));
 var PORT = process.env.PORT || 3000;
 
 app.get("/", function (req, res) {
+  // query for all creatures
   res.render("explore.ejs", {});
 });
 
@@ -39,10 +37,12 @@ app.get("/welcome", function (req, res) {
 });
 
 app.get("/profile", function (req, res) {
+  // query for a single user
   res.render("profile.ejs", {});
 });
 
 app.get("/gallery", function (req, res) {
+  // query all creatures where id is equal to the current user ID
   res.render("gallery.ejs", {});
 });
 
@@ -55,12 +55,23 @@ app.get("/signup", function (req, res) {
 });
 
 app.get("/speciesProfile", function (req, res) {
+  // query for a creature
   res.render("species-profile.ejs", {});
 });
 
-app.get("/submit", function (req, res) {
+app.get("/submit-creature", function (req, res) {
+  // query all worlds
   res.render("submit.ejs", {});
 });
+
+// create a post route for handling submit creature form
+
+app.get("/submit-world", function (req, res) {
+  // query all worlds
+  res.render("submit-world.ejs", {});
+});
+
+// create a post route for handling submit world form
 
 app.get("/world", function (req, res) {
   res.render("world.ejs", {});
