@@ -1,0 +1,31 @@
+.nav2link {
+  color: black;
+}
+
+.cropped1 {
+  object-fit: cover;
+}
+
+#pronav {
+  background-color: white;
+  width: 250px;
+  height: 123%;
+  padding-top: 26%;
+}
+
+.col-md-2 {
+  margin-left: 0;
+}
+.container {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+img {
+  display: inline;
+}
+
+.featureimg {
+  margin-left: 149px;
+  margin-top: 10px;
+}
