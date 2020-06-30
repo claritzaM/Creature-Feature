@@ -100,18 +100,3 @@
     ),
     #101628;
 }
-
-.nav2link {
-  color: black;
-}
-
-.cropped1 {
-  object-fit: cover;
-}
-
-#pronav {
-  background-color: white;
-  width: 250px;
-  height: 123%;
-  padding-top: 26%;
-}
