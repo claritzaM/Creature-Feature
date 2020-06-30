@@ -26,3 +26,32 @@
   font-size: 25px;
   padding-left: 43%;
 }
+
+#leftpanel1 {
+  float: left;
+  padding-right: 25%;
+}
+
+#rightpanel2 {
+  float: right;
+  margin-top: -95px;
+  padding-right: 64%;
+  padding-left: 11%;
+}
+
+#rightpanel3 {
+  float: right;
+  margin-top: -95px;
+  padding-right: 54%;
+}
+
+/* <div class="container">
+  <div class="row">
+    <div class="col-md-2">
+      <div id="pronav">
+        <h3>About</h3>
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <a href="..">People Lurking You</a>
+        <a href="..">Popular</a>
+    </div>
+    </div> */
