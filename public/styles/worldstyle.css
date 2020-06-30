@@ -9,3 +9,13 @@
   height: 114px;
   width: 120px;
 }
+
+#gallerytext {
+  border-radius: 100%;
+  margin-top: -47px;
+  height: 114px;
+  width: 120px;
+  position: relative;
+  float: right;
+  font-size: 25px;
+}
