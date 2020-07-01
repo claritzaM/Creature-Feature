@@ -2,8 +2,15 @@
 var express = require("express");
 var mysql = require("mysql");
 
+// passport pkgs
+var passport = require("./config/passport").passport;
+var session = require("express-session");
+var userEncrypt = require("./config/middleware/userEncrypt");
+var isAuthenticated = require("./config/middleware/isAuthenticated");
+
 // app initialization
 var app = express();
+
 // mysql connection
 
 var db = mysql.createConnection({
@@ -14,6 +21,8 @@ var db = mysql.createConnection({
   database: "creatureFeature",
 });
 
+var passwordDB = require("./config/passport").passwordDB;
+
 db.connect(function (err) {
   if (err) throw err;
   console.log("connected as id ");
@@ -23,8 +32,16 @@ db.connect(function (err) {
 app.set("view engine", "ejs");
 
 // middleware
-app.use(express.static("public"));
+app.use(express.static("public")); // adding static assets (css, img, js files)
+app.use(express.urlencoded({ extended: false })); // reads the data
+app.use(express.json()); // format the data coming in as an object under a property call body
 
+// passport stuff
+app.use(
+  session({ secret: "keyboard cat", resave: false, saveUninitialized: true })
+);
+app.use(passport.initialize());
+app.use(passport.session());
 var PORT = process.env.PORT || 3000;
 
 app.get("/", function (req, res) {
