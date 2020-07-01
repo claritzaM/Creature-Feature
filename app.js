@@ -84,24 +84,30 @@ app.get("/submit-creature", function (req, res) {
 // create a post route for handling submit creature form
 app.post("/submit-creature", function (req, res) {
   var creature = req.body;
-  var id = parseInt(req.params.id);
-  todo.id = id;
   console.log(creature);
+  res.redirect("/submit");
+});
 
-  for (let i = 0; i < creature.length; i++) {
-    if (id === todosItems[i].id) {
-      creature[i] = todo;
-      res.redirect("/");
-    }
-  }
+app.post("/userInfo", function (req, res) {
+  var user = req.body;
+  user.firstName;
+  var sql =
+    "INSERT INTO users (lastName, firstName, userName, email, password) VALUES ?";
+  var value = [
+    [user.lastName, user.firstName, user.userName, user.email, user.password],
+  ];
+  db.query(sql, [value], function (err, result) {
+    if (err) throw err;
+    console.log("number of records inserted" + result.affectedRows);
+  });
+  console.log(user);
+  res.redirect("/signup");
 });
 
 app.get("/submit-world", function (req, res) {
   // query all worlds
   res.render("submit-world.ejs", {});
 });
-
-// create a post route for handling submit world form
 
 app.get("/world", function (req, res) {
   res.render("world.ejs", {});
