@@ -29,3 +29,28 @@ img {
   margin-left: 149px;
   margin-top: 10px;
 }
+
+.posts {
+  width: 300px;
+  background-color: white;
+  padding: 50px;
+  margin: 20px;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  margin-top: -194px;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.body2 {
+  background: linear-gradient(180deg, #ffffff 26.04%, #244943 100%), #33615b;
+}
+
+.imgspace {
+  margin-left: -25px;
+  margin-right: 50px;
+  border-radius: 25px;
+  width: 220px;
+  height: 200px;
+}
