@@ -28,37 +28,45 @@
             <a class="text-light nav-link" href="/">Explore |</a>
           </li>
           <li class="nav-item">
-            <a class="text-light nav-link" href="/submit">Submit |</a>
+            <a class="text-light nav-link" href="/submit-creature">Submit |</a>
           </li>
           <li class="nav-item">
             <a class="text-light nav-link" href="/login">Login |</a>
           </li>
           <li class="nav-item">
-            <a class="text-light nav-link" href="/signup">Register |</a>
+            <a class="text-light nav-link" href="/signup">Register</a>
           </li>
         </nav>
+
+        <!-- Container -->
           <div class="Submitcontainer">
               <p>
-                <form action="/action_page.php">
-                  <input type="file" id="myFile" name="filename" />
+                <form action="/submit-creature">
+                  <input type="file" id="myFile" name="creatureImage" />
+                </div>
+                 <hr>
+                  <div class="Title">
+                <label for="Desciption">Creature Name</label>
+                <br>
+                <input type="text" class="Round" placeholder="Creature name..." name="creatureName">
+                  </div>
+                <hr>
+                  <div class="Title">
+                    <label for="Creature Species">Creature Species</label>
+                      <input type="text" class="Round" placeholder="Creature species name..." name="creatureSpecies">
+                    <br>
+                    <label for="Creature Species Description">Creature Species Description</label>
+                    <textarea class="form-control" class="Round" placeholder="Insert creature species description..." name="speciesDescription" rows="3"></textarea>
+                    <br>
+                    <label for="Creature Description">Creature Description</label>
+                      <textarea class="form-control" class="Round" placeholder="Insert creature description..." name="creatureDescription" rows="3"></textarea>
+                    <br>
+                    <label for="World">World</label>
+                      <input type="text" class="Round" placeholder= "World name..." name="worldID">
+                  </div>
+                  <br>
+                  <button type="submit" class="Submit">Submit</button>
                 </form>
               </p> 
-            </div>
-             <hr>
-              <div class="Title">
-            <label for="Desciption">Title</label>
-            <br>
-            <input type="text" class="Round">
-              </div>
-            <hr>
-              <div class="Title">
-            <label for="Category">Category</label>
-            <input type="text" class="Round">
-            <br>
-            <label for="World">World</label>
-            <input type="text" class="Round">
-              </div>
-              <br>
-              <button type="submit" class="Submit">Submit</button>
   </body>
 </html>
