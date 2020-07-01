@@ -131,3 +131,12 @@
   padding: 20px;
   color: white;
 }
+.container {
+  position: relative;
+  text-align: center;
+}
+
+body {
+  background-image: url("/images/blueforest.jpg");
+  background-size: 100%;
+}
