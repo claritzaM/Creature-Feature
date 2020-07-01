@@ -1,9 +1,3 @@
-.worldcontainer {
-  text-align: auto;
-  background: white;
-  /* padding: 2px; */
-}
-
 #image {
   width: 100%;
   height: 164px;
@@ -25,6 +19,7 @@
   float: center;
   font-size: 25px;
   padding-left: 43%;
+  color: white;
 }
 
 #leftpanel1 {
@@ -55,3 +50,28 @@
         <a href="..">Popular</a>
     </div>
     </div> */
+
+.fancyimage {
+  width: 25%;
+}
+
+.container {
+  margin-left: 0;
+  padding-left: 0;
+  color: white;
+}
+
+body {
+  background: radial-gradient(
+      38.89% 38.89% at 60.82% 61.11%,
+      #427976 0.82%,
+      rgba(35, 55, 73, 0) 100%
+    ),
+    #101628;
+}
+
+p {
+  float: right;
+  padding-left: 58%;
+  padding-right: 7%;
+}
