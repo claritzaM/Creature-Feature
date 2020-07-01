@@ -44,12 +44,12 @@ app.use(passport.initialize());
 app.use(passport.session());
 var PORT = process.env.PORT || 3000;
 
-app.get("/", function (req, res) {
+app.get("/explore", function (req, res) {
   // query for all creatures
   res.render("explore.ejs", {});
 });
 
-app.get("/welcome", function (req, res) {
+app.get("/", function (req, res) {
   res.render("welcome.ejs", {});
 });
 

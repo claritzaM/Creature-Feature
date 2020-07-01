@@ -40,13 +40,17 @@ img {
   padding: 10px;
   margin-top: -194px;
   text-align: center;
+  border-radius: 25px;
 }
 
 .body2 {
   background: linear-gradient(180deg, #ffffff 26.04%, #244943 100%), #33615b;
 }
 
-#imgspace {
-  margin-left: -23px;
-  margin-right: 31px;
+.imgspace {
+  margin-left: -25px;
+  margin-right: 50px;
+  border-radius: 25px;
+  width: 220px;
+  height: 200px;
 }
