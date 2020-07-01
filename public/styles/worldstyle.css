@@ -59,7 +59,7 @@
   height: 150px;
 }
 
-.container {
+.container2 {
   margin-left: 0;
   padding-left: 0;
   color: white;
@@ -78,4 +78,10 @@ p {
   float: right;
   padding-left: 58%;
   padding-right: 7%;
+}
+
+.container2 {
+  margin-left: 167px;
+  padding-left: 2px;
+  background-color: white;
 }
