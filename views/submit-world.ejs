@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  />
+  <link rel="stylesheet" href="/styles/style.css"/>
+    <title>Submit</title>
+  </head>
+  <body class="SubmitBod">
+    <!-- Nav bar -->
+
+    <nav index=navbar class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand font-weight-bold" href="#">
+          <img src="/images/logo.png" width="30" height="30" alt="Logo" loading="lazy"> Creature Feature
+         </a>
+        </button>
+  
+        <div class="navbar-nav" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="text-light nav-link" href="/Profile">Home |</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-light nav-link" href="/">Explore |</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-light nav-link" href="/submit-creature">Submit |</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-light nav-link" href="/login">Login |</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-light nav-link" href="/signup">Register</a>
+            </li>
+          </nav>
+
+          <!-- Container -->
+            <div class="Submitcontainer">
+                <p>
+                  <form action="/submit-creature">
+                    <input type="file" id="myFile" name="worldImage" />
+                  </div>
+                   <hr>
+                    <div class="Title">
+                  <label for="Desciption">World Name</label>
+                  <br>
+                  <input type="text" class="Round" placeholder="World name..." name="name">
+                    </div>
+                  <hr>
+                    <br>
+                    <button type="submit" class="Submit">Submit</button>
+                  </form>
+                </p> 
+  </body>
+</html>

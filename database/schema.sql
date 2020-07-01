@@ -24,7 +24,9 @@ CREATE TABLE users
     (
         id INT NOT NULL
         AUTO_INCREMENT,
-	 creatureName varchar
+	 creatureImage varchar
+        (255) NOT NULL,
+     creatureName varchar
         (255) NOT NULL,
      creatureSpecies varchar
         (255) NOT NULL,
@@ -43,6 +45,8 @@ CREATE TABLE users
         (
             id INT NOT NULL
             AUTO_INCREMENT,
+            worldImage varchar
+            (255) NOT NULL,
             name varchar
             (255) NOT NULL,
             updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
