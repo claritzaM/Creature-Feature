@@ -80,7 +80,8 @@
   padding: 10px;
 }
 .Round {
-  border-radius: 25px;
+  border-radius: 50px;
+  width: -webkit-fill-available;
 }
 .main-Side {
   /* Same as the width of the sidebar */
