@@ -2,8 +2,15 @@
 var express = require("express");
 var mysql = require("mysql");
 
+// passport pkgs
+var passport = require("./config/passport").passport;
+var session = require("express-session");
+var userEncrypt = require("./config/middleware/userEncrypt");
+var isAuthenticated = require("./config/middleware/isAuthenticated");
+
 // app initialization
 var app = express();
+
 // mysql connection
 
 var db = mysql.createConnection({
@@ -14,6 +21,8 @@ var db = mysql.createConnection({
   database: "creatureFeature",
 });
 
+var passwordDB = require("./config/passport").passwordDB;
+
 db.connect(function (err) {
   if (err) throw err;
   console.log("connected as id ");
@@ -23,16 +32,24 @@ db.connect(function (err) {
 app.set("view engine", "ejs");
 
 // middleware
-app.use(express.static("public"));
+app.use(express.static("public")); // adding static assets (css, img, js files)
+app.use(express.urlencoded({ extended: false })); // reads the data
+app.use(express.json()); // format the data coming in as an object under a property call body
 
+// passport stuff
+app.use(
+  session({ secret: "keyboard cat", resave: false, saveUninitialized: true })
+);
+app.use(passport.initialize());
+app.use(passport.session());
 var PORT = process.env.PORT || 3000;
 
-app.get("/", function (req, res) {
+app.get("/explore", function (req, res) {
   // query for all creatures
   res.render("explore.ejs", {});
 });
 
-app.get("/welcome", function (req, res) {
+app.get("/", function (req, res) {
   res.render("welcome.ejs", {});
 });
 
@@ -67,24 +84,30 @@ app.get("/submit-creature", function (req, res) {
 // create a post route for handling submit creature form
 app.post("/submit-creature", function (req, res) {
   var creature = req.body;
-  var id = parseInt(req.params.id);
-  todo.id = id;
   console.log(creature);
+  res.redirect("/submit");
+});
 
-  for (let i = 0; i < creature.length; i++) {
-    if (id === todosItems[i].id) {
-      creature[i] = todo;
-      res.redirect("/");
-    }
-  }
+app.post("/userInfo", function (req, res) {
+  var user = req.body;
+  user.firstName;
+  var sql =
+    "INSERT INTO users (lastName, firstName, userName, email, password) VALUES ?";
+  var value = [
+    [user.lastName, user.firstName, user.userName, user.email, user.password],
+  ];
+  db.query(sql, [value], function (err, result) {
+    if (err) throw err;
+    console.log("number of records inserted" + result.affectedRows);
+  });
+  console.log(user);
+  res.redirect("/signup");
 });
 
 app.get("/submit-world", function (req, res) {
   // query all worlds
   res.render("submit-world.ejs", {});
 });
-
-// create a post route for handling submit world form
 
 app.get("/world", function (req, res) {
   res.render("world.ejs", {});

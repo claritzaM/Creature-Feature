@@ -15,9 +15,9 @@
   </head>
   <body>
     <!-- Nav bar -->
-
+   
     <nav index=navbar class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand font-weight-bold" href="#">
+      <a class="navbar-brand font-weight-bold" href="/">
         <img src="/images/logo.png" width="30" height="30" alt="Logo" loading="lazy"> Creature Feature
        </a>
       </button>
@@ -28,7 +28,7 @@
             <a class="text-light nav-link" href="/Profile">Home |</a>
           </li>
           <li class="nav-item">
-            <a class="text-light nav-link" href="/">Explore |</a>
+            <a class="text-light nav-link" href="/explore">Explore |</a>
           </li>
           <li class="nav-item">
             <a class="text-light nav-link" href="/submit-creature">Submit |</a>
@@ -37,7 +37,7 @@
             <a class="text-light nav-link" href="/login">Login |</a>
           </li>
           <li class="nav-item">
-            <a class="text-light nav-link" href="/signup">Register |</a>
+            <a class="text-light nav-link" href="/signup">Register</a>
           </li>
         </nav>
     </div>
@@ -45,29 +45,33 @@
 <br>
 <br>
 
+<div class="container">
+  <div class="welcome-main">
+      <div class="welcomebox">
 
-<!-- sign in Box -->
-<form>
-  <div class="form-group" "col-md-3 mb-3">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <small id="emailHelp" class="form-text text-muted"></small>
+        <!-- sign in Box -->
+        <form method="post">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" required>
+            <small id="emailHelp" class="form-text text-muted"></small>
+        
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" name="password" required>
+        
+        
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+        
+          </form>
+          <br>
+          <button type="submit" class="btn btn-primary">Login</button>
+        <!-- Sign in box end -->
+      Or
+        <!-- or sign up button -->
+        <button type="button" class="btn btn-primary">Sign Up Now</button>
+        <!-- or sign up end -->
+        </body>
+        </html>
+      </div>
+    </div>
   </div>
-  <div class="form-group" "col-md-3 mb-3">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
-  </div>
-  <div class="form-group form-check" "col-md-3 mb-3>
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Remember Me</label>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-
-<!-- Sign in box end -->
-<p>OR</p>
-<!-- or sign up button -->
-<button type="button" class="btn btn-primary">Sign Up Now</button>
-<!-- or sign up end -->
-</body>
-</html>
