@@ -101,7 +101,6 @@ app.post("/submit-creature", function (req, res) {
 
 app.post("/userInfo", function (req, res) {
   var user = req.body;
-  user.firstName;
   var sql =
     "INSERT INTO users (lastName, firstName, userName, email, password) VALUES ?";
   var value = [
