@@ -93,8 +93,7 @@ app.get("/submit-creature", function (req, res) {
 // create a post route for handling submit creature form
 app.post("/submit-creature", function (req, res) {
   var creature = req.body;
-  console.log(creature);
-  var todo = req.body;
+  console.log("creature", creature);
 
   var sql = "INSERT INTO creatures SET ?";
   db.query(sql, creature, function (err, result) {
