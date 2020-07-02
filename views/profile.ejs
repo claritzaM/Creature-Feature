@@ -19,7 +19,7 @@
   <a class="navbar-brand font-weight-bold" href="/">
     <img src="/images/logo.png" width="30" height="30" alt="Logo" loading="lazy"> Creature Feature
    </a>
-  </button>
+  
 
   <div class="navbar-nav" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
@@ -38,8 +38,10 @@
       <li class="nav-item">
         <a class="text-light nav-link" href="/signup">Register</a> -->
       </li>
+      </ul>
+      </div>
     </nav>
-</div>
+
 <!-- Nav Bar End -->
 <!-- Header Image -->
 <img class="cropped1" src="/images/nightwatch.png" class="rounded mx-auto d-block" alt="..." width="100%" height="250px">
@@ -84,7 +86,9 @@
       <h3 class="posts">Recent Posts</h3>
       <br>
       <% for(var i=0; i < creatures.length; i++) { %>
-        <img class="imgspace" src=<%= creatures[i].creatureImage %>  alt="...">
+        <a href="/creature/<%= creatures[i].id %>" >
+          <img class="imgspace" src=<%= creatures[i].creatureImage %>  alt="...">
+        </a>
       <% } %>
         
     </div>
