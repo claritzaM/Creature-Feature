@@ -78,12 +78,9 @@
   
     <div class="col-mb-10 featureimg" >
       <!-- loop over creatures and render there image -->
-      <img class="imgspace" src="/images/lykavisdesign.jpg"  alt="...">
-      
-      <img src="/images/onxy.jpg" class="imgspace" alt="..." >
-    
-      <img class="imgspace" src="/images/nightwatch.png"  alt="...">
-
+      <% for(var i=0; i < creatures.length; i++) { %>
+        <img class="imgspace" src=<%= creatures[i].creatureImage %>  alt="...">
+      <% } %>
     </div>
   </div>
 </div>
