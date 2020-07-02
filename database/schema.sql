@@ -58,6 +58,8 @@ CREATE TABLE users
             INSERT INTO creatures
                 (creatureImage, creatureName, creatureSpecies, speciesDescription, creatureDescription)
             VALUES
-                ("https://pm1.narvii.com/5995/503e75adcfa32f606ab50b3456097255394b3f4d_hq.jpg" , "Ikran", "Banshee", "Large bird-like ariel predator native to Pandora.", "Creatures used by the Na'vi for hunting from the air and traveling larger distances.");
-                
+                ("https://pm1.narvii.com/5995/503e75adcfa32f606ab50b3456097255394b3f4d_hq.jpg" , "Ikran", "Banshee", "Large bird-like ariel predator native to Pandora.", "Creatures used by the Na'vi for hunting from the air and traveling larger distances."),
+                ("https://steamuserimages-a.akamaihd.net/ugc/959719626679197537/95E952259095130C3F30130A37938A3592F927F7/" , "Bitey", "Dragazon", "Massive lizard like dragon who likes to sit on tree branches.", "Be careful he likes to bite!"),
+                ("https://i.redd.it/5uqi7s09gkt21.jpg" , "Sparky", "Massigon", "Large dragon who smites his enemies", "Did you think that lightning was from a cloud? No it's from Sparky!");
+
             
