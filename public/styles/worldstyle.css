@@ -30,8 +30,8 @@
 #rightpanel2 {
   float: right;
   margin-top: -95px;
-  padding-right: 46%;
-  padding-left: 24%;
+  padding-right: 41%;
+  padding-left: 35%;
   color: white;
 }
 
@@ -72,7 +72,7 @@ body {
 p {
   float: top right;
   text-align: right;
-  color: red;
+  color: black;
   margin-left: 300px;
   margin-right: 50px;
 }
