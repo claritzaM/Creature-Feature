@@ -55,7 +55,12 @@ app.get("/", function (req, res) {
 
 app.get("/profile", function (req, res) {
   // query for a single user
-  res.render("profile.ejs", {});
+  var sql = "SELECT * FROM creatures";
+  db.query(sql, function (err, results) {
+    if (err) throw err;
+    console.log(results);
+    res.render("profile.ejs", { creatures: results });
+  });
 });
 
 app.get("/gallery", function (req, res) {
@@ -85,7 +90,13 @@ app.get("/submit-creature", function (req, res) {
 app.post("/submit-creature", function (req, res) {
   var creature = req.body;
   console.log(creature);
-  res.redirect("/submit");
+  var todo = req.body;
+
+  var sql = "INSERT INTO creatures SET ?";
+  db.query(sql, creature, function (err, result) {
+    if (err) throw err;
+    res.redirect("/profile");
+  });
 });
 
 app.post("/userInfo", function (req, res) {
