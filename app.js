@@ -53,6 +53,10 @@ app.get("/", function (req, res) {
   res.render("welcome.ejs", {});
 });
 
+app.get("/creature/:id", function (req, res) {
+  res.render("singlecreature.ejs", {});
+});
+
 app.get("/profile", function (req, res) {
   // query for a single user
   var sql = "SELECT * FROM creatures";
