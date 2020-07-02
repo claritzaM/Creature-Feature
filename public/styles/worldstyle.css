@@ -64,6 +64,8 @@
   margin-left: 0;
   padding-left: 0;
   color: white;
+  max-width: 93.333333%;
+  height: 250px;
 }
 
 body {
@@ -77,11 +79,18 @@ body {
 
 p {
   float: right;
-  padding-left: 58%;
-  padding-right: 7%;
+  padding-left: 68%;
+  padding-right: 0%;
+  margin-left: -39px;
+  margin-right: 53px;
+  color: black;
+  margin-top: -41px;
+
+  margin-top: -41px;
 }
 
 .container2 {
+  margin-right: 0px;
   margin-left: 167px;
   padding-left: 2px;
   background-color: white;
