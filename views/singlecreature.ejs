@@ -31,12 +31,6 @@
       <li class="nav-item">
         <a class="text-light nav-link" href="/submit-creature">Submit |</a>
       </li>
-      <li class="nav-item">
-        <a class="text-light nav-link" href="/login">Login |</a>
-      </li>
-      <li class="nav-item">
-        <a class="text-light nav-link" href="/signup">Register</a>
-      </li>
     </nav>
     </div>
 
@@ -51,22 +45,22 @@
         <div class="container">
           <div class="row">
             <div class="col-md text-white" >
-              <h1>Ikran</h1>
+              <h1><%= creature.creatureName %></h1>
             </div>
           </div>
           <div class="row">
             <div class="col-md">
               <div class="card text-white bg-secondary mb-3">
                 <div class="card-header">
-                 habitat
+                  <%= creature.creatureSpecies %>
                 </div>
                 <div class="card-body">
-                  <p class="card-text">Lives in the air of Pandora and nests in rookeries. Can be found moving through the floating mountains in the valley of Moara.</p>
+                  <p class="card-text"><%= creature.speciesDescription %></p>
                 </div>
               </div>
             </div>
             <div class="col-md">
-              <img src="../images/flying banshee.png" class="img-fluid" alt="Flying banshee">
+              <img src=<%= creature.creatureImage %> class="img-fluid" alt="Flying banshee">
             </div>
           </div>
         </div>
@@ -78,7 +72,7 @@
                 description
               </div>
               <div class="card-body">
-                <p class="card-text">Large bird-like ariel predator native to Pandora. Used by the Na'vi for hunting from the air and traveling larger distances.</p>
+                <p class="card-text"><%= creature.creatureDescription %></p>
               </div>
             </div>
           </div>

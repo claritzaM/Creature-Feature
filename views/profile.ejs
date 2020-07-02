@@ -86,7 +86,9 @@
       <h3 class="posts">Recent Posts</h3>
       <br>
       <% for(var i=0; i < creatures.length; i++) { %>
-        <img class="imgspace" src=<%= creatures[i].creatureImage %>  alt="...">
+        <a href="/creature/<%= creatures[i].id %>" >
+          <img class="imgspace" src=<%= creatures[i].creatureImage %>  alt="...">
+        </a>
       <% } %>
         
     </div>

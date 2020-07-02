@@ -54,7 +54,12 @@ app.get("/", function (req, res) {
 });
 
 app.get("/creature/:id", function (req, res) {
-  res.render("singlecreature.ejs", {});
+  var sql = "SELECT * FROM creatures WHERE ? ";
+  db.query(sql,[{id: req.params.id}], function (err, results) {
+    if (err) throw err;
+    console.log(results);    
+    res.render("singlecreature.ejs", { creature: results[0] });
+  });
 });
 
 app.get("/profile", function (req, res) {
