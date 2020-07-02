@@ -41,8 +41,9 @@
         <!-- Container -->
           <div class="Submitcontainer">
               <p>
-                <form action="/submit-creature">
-                  <input type="file" id="myFile" name="creatureImage" />
+                <form action="/submit-creature" method="POST">
+                   <label for="Desciption">Creature image</label>
+                  <input type="text" id="myFile" name="creatureImage" />
                 </div>
                  <hr>
                   <div class="Title">
@@ -62,7 +63,7 @@
                       <textarea class="form-control" class="Round" placeholder="Insert creature description..." name="creatureDescription" rows="3"></textarea>
                     <br>
                     <label for="World">World</label>
-                      <input type="text" class="Round" placeholder= "World name..." name="worldID">
+                      <input type="text" class="Round" placeholder= "World name..." >
                   </div>
                   <br>
                   <button type="submit" class="Submit">Submit</button>
