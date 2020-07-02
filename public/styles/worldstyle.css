@@ -55,15 +55,9 @@
 .fancyimage {
   border-radius: 25px;
   background: white;
-  padding: 20px;
+
   width: 200px;
   height: 150px;
-}
-
-.container2 {
-  margin-left: 0;
-  padding-left: 0;
-  color: white;
 }
 
 body {
@@ -76,13 +70,24 @@ body {
 }
 
 p {
-  float: right;
-  padding-left: 58%;
-  padding-right: 7%;
+  float: top right;
+  text-align: right;
+  color: red;
+  margin-left: 300px;
+  margin-right: 50px;
 }
 
 .container2 {
-  margin-left: 167px;
-  padding-left: 2px;
-  background-color: white;
+  background: linear-gradient(
+      180deg,
+      #ffffff 42.71%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #1f5350;
+  border: 1px solid #000000;
+  height: 100%;
+  width: 100%;
+  border-radius: 18px;
+  margin-left: 200px;
+  margin-bottom: 100px;
 }
